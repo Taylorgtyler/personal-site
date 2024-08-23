@@ -10,6 +10,10 @@ export default {
 				sans: ["Montsterrat", ...defaultTheme.fontFamily.sans],
 				serif: ["Sora", ...defaultTheme.fontFamily.serif],
 			},
+			colors: {
+				"accent-green": "#239b56",
+				"accent-green-light": "#7a904f",
+			},
 		},
 	},
 	plugins: [require("@tailwindcss/typography")],
