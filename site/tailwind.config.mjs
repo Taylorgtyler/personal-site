@@ -1,8 +1,16 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	darkMode: ["class"],
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["Montsterrat", ...defaultTheme.fontFamily.sans],
+				serif: ["Sora", ...defaultTheme.fontFamily.serif],
+			},
+		},
 	},
-	plugins: [],
-}
+	plugins: [require("@tailwindcss/typography")],
+};
