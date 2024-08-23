@@ -16,8 +16,8 @@ export function formatDate(date: Date) {
 export function dateRange(startDate: Date, endDate?: Date | string): string {
 	const startMonth = startDate.toLocaleString("default", { month: "short" });
 	const startYear = startDate.getFullYear().toString();
-	let endMonth;
-	let endYear;
+	let endMonth = "";
+	let endYear = "";
 
 	if (endDate) {
 		if (typeof endDate === "string") {
@@ -29,5 +29,5 @@ export function dateRange(startDate: Date, endDate?: Date | string): string {
 		}
 	}
 
-	return `${startMonth}${startYear} - ${endMonth}${endYear}`;
+	return `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
 }
