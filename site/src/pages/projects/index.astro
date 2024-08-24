@@ -4,6 +4,7 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import Container from "../../components/Container.astro";
 import ArrowCard from "../../components/ArrowCard.astro";
 import { PROJECTS } from "../../consts";
+import BackToPrev from "../../components/BackToPrev.astro";
 
 const projects = (await getCollection("projects"))
 	.filter((project) => !project.data.draft)
@@ -13,6 +14,9 @@ const projects = (await getCollection("projects"))
 <PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
 	<Container>
 		<div class="space-y-10">
+			<div class="animate mb-4">
+				<BackToPrev href="/"> Back to home </BackToPrev>
+			</div>
 			<div class="animate font-semibold text-white">Projects</div>
 			<ul class="animate flex flex-col gap-4">
 				{
