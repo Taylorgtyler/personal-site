@@ -3,6 +3,7 @@ title: "Death of the Scrumaster"
 description: "The Downfall of the Developer's Voice on an Agile Team"
 date: "Aug 24 2024"
 tags: ["Agile", "Leadership"]
+draft: true
 ---
 
 # Once Upon a Time
