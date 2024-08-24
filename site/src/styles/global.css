@@ -38,6 +38,7 @@ article {
 	@apply max-w-full prose-invert prose-img:mx-auto prose-img:my-auto;
 	@apply prose-headings:font-semibold prose-p:font-serif;
 	@apply prose-headings:text-white;
+	@apply space-y-4;
 }
 
 @layer utilities {
@@ -49,6 +50,22 @@ article {
 	article a:hover {
 		@apply text-white;
 		@apply decoration-white/50;
+	}
+}
+
+@layer utilities {
+	.badge {
+		@apply inline-block px-2 py-1 mr-1;
+		@apply text-sm font-semibold;
+		@apply text-white;
+		@apply border border-white/20;
+		@apply rounded-md;
+		@apply transition-colors duration-300 ease-in-out;
+	}
+
+	.badge:hover {
+		@apply bg-white/5;
+		@apply border-accent-green;
 	}
 }
 

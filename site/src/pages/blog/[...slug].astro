@@ -4,6 +4,7 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import Container from "../../components/Container.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BackToPrev from "../../components/BackToPrev.astro";
+import Badge from "../../components/Badge.astro"; // Ensure Badge component is imported
 
 export async function getStaticPaths() {
 	const posts = (await getCollection("blog"))
@@ -32,8 +33,17 @@ const { Content } = await post.render();
 			<h1 class="animate text-3xl font-bold text-white">
 				{post.data.title}
 			</h1>
+			{
+				post.data.tags && post.data.tags.length > 0 && (
+					<div class="animate flex gap-2">
+						{post.data.tags.map((tag) => (
+							<Badge label={tag} />
+						))}
+					</div>
+				)
+			}
 		</div>
-		<article class="animate prose-dark space-y-4">
+		<article class="animate prose-dark">
 			<Content />
 		</article>
 	</Container>
