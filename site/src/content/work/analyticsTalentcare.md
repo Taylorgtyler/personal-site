@@ -1,8 +1,6 @@
 ---
 company: "Talentcare"
 role: "Analytics Engineer"
-dateStart: "01/01/2020"
-dateEnd: "11/27/2022"
+dateStart: "06/01/2019"
+dateEnd: "12/20/2019"
 ---
-
-Created data models and analytics dashboards that drove customer value.
