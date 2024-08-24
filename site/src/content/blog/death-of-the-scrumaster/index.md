@@ -1,6 +1,6 @@
 ---
 title: "Death of the Scrumaster"
-description: "The Downfall of the Developer's Voice on an Agile Team"
+description: "Gone But Never Forgotten"
 date: "Aug 24 2024"
 tags: ["Agile", "Leadership"]
 ---
