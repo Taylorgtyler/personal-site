@@ -38,18 +38,25 @@ article {
 	@apply max-w-full prose-invert prose-img:mx-auto prose-img:my-auto;
 	@apply prose-headings:font-semibold prose-p:font-serif;
 	@apply prose-headings:text-white;
-	@apply space-y-4;
+	@apply space-y-6;
 }
 
 @layer utilities {
 	article a {
-		@apply font-sans text-current underline underline-offset-2;
+		@apply font-sans text-accent-green underline underline-offset-2;
 		@apply decoration-white/30;
 		@apply transition-colors duration-300 ease-in-out;
 	}
 	article a:hover {
 		@apply text-white;
 		@apply decoration-white/50;
+	}
+	article h1 {
+		@apply text-2xl font-bold text-accent-green;
+		@apply mb-2 mt-2;
+	}
+	article h2 {
+		@apply text-xl font-bold text-accent-green;
 	}
 }
 
