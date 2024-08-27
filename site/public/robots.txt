@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /private/
 Allow: /public/
 Sitemap: https://taylorgtyler.com/sitemap.xml
