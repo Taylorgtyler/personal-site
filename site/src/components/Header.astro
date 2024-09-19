@@ -1,6 +1,7 @@
 ---
 import Container from "./Container.astro";
 import Link from "./Link.astro";
+import NavLink from "./NavLink.astro";
 import { SITE } from "../consts";
 ---
 
@@ -12,16 +13,10 @@ import { SITE } from "../consts";
 					{SITE.NAME}
 				</div>
 			</Link>
-			<nav class="flex gap-1">
-				<Link href="/blog"> blog </Link>
-				<span>
-					{`/`}
-				</span>
-				<Link href="/work"> work </Link>
-				<span>
-					{`/`}
-				</span>
-				<Link href="/projects"> projects </Link>
+			<nav class="flex gap-4">
+				<NavLink href="/blog"> blog </NavLink>
+				<NavLink href="/work"> work </NavLink>
+				<NavLink href="/projects"> projects </NavLink>
 			</nav>
 		</div>
 	</Container>
