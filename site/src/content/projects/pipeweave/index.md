@@ -12,7 +12,6 @@ I was tasked with building out data pipelines to move data from our data warehou
 
 It didn't take long for me to realize there weren't a whole lot of tools that were designed to just build simple and scalable data pipelines for those that airflow or dagster were overkill for. 
 
-Since then, I've moved on to other companies and found similar issues and decided to take my crack at building a pipeline tool. Full disclosure, I may open source the python version when I convert the main project to Go for
-performance and monetization reasons.
+Since then, I've moved on to other companies and found similar issues and decided to take my crack at building a pipeline tool. The Python version is currently open source and available on PyPi. 
 
 Welcome to Pipeweave. 
