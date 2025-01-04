@@ -94,3 +94,38 @@ html #back-to-top {
 html.scrolled #back-to-top {
 	@apply opacity-100 pointer-events-auto;
 }
+
+@layer components {
+	.contact-form {
+		@apply bg-zinc-800 p-6 rounded-lg shadow-md;
+	}
+
+	.contact-form label {
+		@apply block text-white;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		@apply border border-white/20 bg-zinc-700 text-white p-2 w-full rounded-md;
+	}
+
+	.contact-form button {
+		@apply bg-accent-green text-white p-2 rounded-md transition-colors duration-300 ease-in-out hover:bg-accent-green/80;
+	}
+}
+
+article ul {
+	@apply list-disc space-y-2 ml-4;
+}
+
+article ul li {
+	@apply text-white/90 pl-2 list-outside;
+}
+
+article ol {
+	@apply list-decimal space-y-2 ml-4;
+}
+
+article ol li {
+	@apply text-white/90 pl-2 list-outside;
+}
