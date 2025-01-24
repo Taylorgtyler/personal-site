@@ -1,5 +1,5 @@
 ---
-title: "Burnout and its many faces"
+title: "Burnout and its many faces: When life needs a maintenance sprint"
 description: "A look at burnout and how it manifests in different ways"
 date: "Jan 24 2025"
 tags: ["Personal Development", "Leadership"]
